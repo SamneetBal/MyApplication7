@@ -1,62 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context="com.example.admin.myapplication.LoginActivity">
 
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/layoutapp"
         android:layout_centerInParent="true"
         android:scaleType="centerCrop"
-        />
+        android:src="@drawable/layoutapp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#dceae4e4"
-        />
+        android:background="#dceae4e4" />
+
     <EditText
+        android:id="@+id/e1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="30dp"
-        android:id="@+id/e1"
+        android:hint="Email"
+        android:imeOptions="actionNext"
         android:inputType="textEmailAddress"
         android:maxLines="1"
         android:singleLine="true"
-        android:imeOptions="actionNext"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
 
         />
 
     <EditText
         android:layout_width="match_parent"
-        android:inputType="textPassword"
-        android:singleLine="true"
-        android:maxLines="1"
-        android:imeOptions="actionDone"
         android:layout_height="wrap_content"
-        android:hint="Password"
         android:layout_below="@+id/e1"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:hint="Password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
 
         />
+
     <Button
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:text="LOGIN"
-        android:textColor="#fff"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150dp"
         android:background="#d0f13928"
-        />
+        android:text="LOGIN"
+        android:textColor="#fff" />
 
 </RelativeLayout>
