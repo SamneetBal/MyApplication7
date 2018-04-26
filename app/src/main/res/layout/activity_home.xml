@@ -5,8 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
+
+
     <android.support.design.widget.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,7 +15,6 @@
         app:menu="@menu/navigation_items"
         android:id="@+id/bottom_navigation"
         >
-
     </android.support.design.widget.BottomNavigationView>
 
     <ImageView
@@ -30,27 +30,31 @@
         android:layout_height="50dp"
         android:orientation="horizontal"
         >
-        <ImageButton
+
+        <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
+            android:onClick="drawer"
             android:src="@drawable/ic_settings"
             />
-        <ImageButton
+
+        <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="200dp"
+            android:layout_marginLeft="220dp"
             android:src="@drawable/ic_search"
             />
 
     </LinearLayout>
 
+
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#dceae4e4"/>
+        android:background="#dceae7d7"/>
 
 
     <FrameLayout

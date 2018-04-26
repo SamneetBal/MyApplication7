@@ -7,4 +7,18 @@
 
 
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/layoutapp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dceae4e4"
+        />
+
 </FrameLayout>

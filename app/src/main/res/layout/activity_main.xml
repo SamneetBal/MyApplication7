@@ -18,12 +18,12 @@
  <View
      android:layout_width="match_parent"
      android:layout_height="match_parent"
-     android:background="#dceae4e4"
+     android:background="#dcecd7d7"
      />
  <ImageView
      android:layout_width="500dp"
      android:layout_height="300dp"
-     android:src="@drawable/logo"
+     android:src="@drawable/applogo"
      android:layout_alignParentTop="true"
 
      />
@@ -62,20 +62,43 @@
 
 
      />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont have an email account?Create now"
+        android:layout_above="@+id/sign_up"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        />
     <Button
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:text="LOGIN NOW"
         android:textColor="#000"
+        android:layout_above="@+id/sign_up"
         android:background="@drawable/background2"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
         android:layout_marginBottom="20dp"
         android:onClick="login"
         android:id="@+id/log_in"
 
         />
+    <Button
+    android:layout_width="300dp"
+    android:layout_height="40dp"
+    android:text="sign up"
+    android:textColor="#000"
+    android:background="@drawable/background2"
+    android:layout_centerInParent="true"
+android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="signup"
+    android:id="@+id/sign_up"
+
+    />
 
  <ImageButton
      android:id="@+id/g1"

@@ -17,7 +17,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#dceae4e4"
+        android:background="#dcecd7d7"
         />
 
     <EditText
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:hint="Phone Number"
         android:id="@+id/p_n"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />
