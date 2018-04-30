@@ -1,10 +1,10 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.example.admin.myapplication.ProfileFragment">
-
+    tools:context="com.example.admin.myapplication.ProfileFragment"
+    android:orientation="vertical">
 
 
     <ImageView
@@ -13,12 +13,110 @@
         android:src="@drawable/layoutapp"
         android:layout_centerInParent="true"
         android:scaleType="centerCrop"
-
         />
+
+
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#dceae4e4"
+        android:background="#dcecd7d7"
         />
 
-</FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow"
+        android:layout_marginTop="20dp"
+        android:id="@+id/back"
+        android:onClick="back"
+        />
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pro"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="120dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:text="products on rent"/>
+
+
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:text="products rent"/>
+
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:hint="phone number"
+        android:inputType="phone"
+        android:id="@+id/ph_no"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ph_no"
+        android:hint="My orders"
+        android:inputType="phone"
+        android:layout_marginTop="10dp"
+        android:id="@+id/orders"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orders"
+        android:hint="My Wish List"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>

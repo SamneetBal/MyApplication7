@@ -97,8 +97,7 @@ android:layout_marginBottom="20dp"
         android:layout_alignParentBottom="true"
         android:onClick="signup"
     android:id="@+id/sign_up"
-
-    />
+        />
 
  <ImageButton
      android:id="@+id/g1"
@@ -109,6 +108,7 @@ android:layout_marginBottom="20dp"
      android:layout_marginTop="250dp"
      app:srcCompat="@drawable/search"
      android:onClick="google"/>
+
 
  <ImageButton
      android:id="@+id/p1"

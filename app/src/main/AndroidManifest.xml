@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.admin.myapplication.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,11 +17,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.example.admin.myapplication.LoginActivity"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".Phone" />
+        <activity android:name="com.example.admin.myapplication.Phone" />
         <activity
-            android:name=".Home"
+            android:name="com.example.admin.myapplication.Home"
             android:label="@string/title_activity_home" />
         <activity android:name="com.example.admin.myapplication.startingpage" />
         <activity android:name="com.example.admin.myapplication.signup"></activity>

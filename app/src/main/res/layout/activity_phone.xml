@@ -6,19 +6,21 @@
     android:layout_height="match_parent"
     tools:context="com.example.admin.myapplication.Phone">
 
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/layoutapp"
         android:layout_centerInParent="true"
-        android:scaleType="centerCrop"
+        android:scaleType="centerCrop" />
 
-        />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#dcecd7d7"
         />
+
 
     <EditText
         android:layout_width="match_parent"
@@ -29,6 +31,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />
+
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,6 +41,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />
+
+
     <Button
         android:layout_width="300dp"
         android:layout_height="40dp"
@@ -46,5 +52,6 @@
         android:layout_marginTop="150dp"
         android:background="#d0f13928"
         />
+
 
 </RelativeLayout>
